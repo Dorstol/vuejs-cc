@@ -2,6 +2,7 @@
 import JobCard from '@/components/JobCard.vue';
 import jobsData from '@/jobs.json';
 import { defineProps, ref } from 'vue';
+import { RouterLink } from 'vue-router';
 
 const jobs = ref(jobsData);
 
@@ -28,7 +29,8 @@ defineProps({
   </section>
 
   <section v-if="showButton" class="m-auto max-w-lg my-10 px-6">
-    <a href="/jobs " class="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700">View All
-      Jobs</a>
+    <RouterLink to="/jobs" class="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700">View
+      All
+      Jobs</RouterLink>
   </section>
 </template>
