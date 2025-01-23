@@ -1,6 +1,7 @@
 import HomeView from "@/views/HomeView.vue";
 import JobsView from "@/views/JobsView.vue";
 import JobView from "@/views/JobView.vue";
+import AddJobView from "@/views/AddJobView.vue";
 import NotFoundView from "@/views/NotFoundView.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
@@ -20,7 +21,7 @@ const router = createRouter({
         {
             path: '/jobs/add',
             name: 'add_job',
-            component: '',
+            component: AddJobView,
         },
         {
             path: '/jobs/:id',
